@@ -9,7 +9,6 @@ from hostList import hostListDNV, hostListCGY
 from credentials import credentials
 from pprint import pprint
 
-# import getToken
 
 urllib3.disable_warnings()
 
