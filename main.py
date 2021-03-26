@@ -19,15 +19,18 @@ def getDC():
     print('ACI Fabric Interface Details')
     print('1 - Fortrust Data Center APIC')
     print('2 - Q93 Data Center APIC')
+    print('0 - Exit Program')
     print()
     while True:
         dc = input('Choose which Data Center: ')
 
         if dc == '1' or dc == '2':
             break
+        elif dc == '0':
+            exit()
         else:
             print()
-            print("Please select option '1' or '2'")
+            print("Please select option: '1' - Fortrust or '2' - Q93' or '0' - Exit")
             print()
 
     return dc
